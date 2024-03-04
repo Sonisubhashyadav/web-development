@@ -39,8 +39,8 @@
     </ol>
     <a href="https://www.codewithharry.com/tutorial/html-links/" target="_blank">
         content
-    </a>
-    <img width="700" height="600"src="rose.jpeg" />
+    </a><br>
+    <img width="700" height="600"src="rose.jpeg" /><br>
     <pre>
         # A simple Python program to print "Hello, World!"
       def main():
@@ -50,6 +50,7 @@
           main()
       </pre>
       <h1>HTML Definition List</h1>
+      <br>
   <dl>
     <dt>HTML</dt>
     <dd>HyperText Markup Language: The standard language for creating web pages.</dd>
@@ -60,6 +61,7 @@
     <dt>JavaScript</dt>
     <dd>A programming language commonly used in web development to add interactive features.</dd>
   </dl>
+  <br>
   <table>
     <tr>
       <th>Name</th>
@@ -71,6 +73,7 @@
     </tr>
    
 </table>
+<br>
 <table border="1">
     <tr>
       <td colspan="3">Merged Columns</td>
@@ -81,7 +84,7 @@
       <td>Column 3</td>
     </tr>
   </table>
-  
+  <br>
 <table border="1">
     <tr>
       <td>Row 1, Column 1</td>
@@ -91,6 +94,7 @@
       <td>Row 2, Column 1</td>
     </tr>
   </table>
+  <br>
   <table border="3">
     <!-- Caption -->
     <caption>Employee Information</caption>
@@ -135,7 +139,41 @@
         </tr>
     </tfoot>
 </table>
+<br>
 
-  
+<form action="/submit" method="post">
+    <!-- Text input for username -->
+    <label for="username">username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    <br><br>
+
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <!-- Radio buttons for gender -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br><br>
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+    <label for="subscribe">Subscribe to newsletter</label><br><br>
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+  </form><br>
+
+  <form action="/submit">
+    <textarea name="comment" rows="4" cols="50">Enter your comment here...</textarea><br>
+    
+    <select name="fruits">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="cherry">Cherry</option>
+    </select>
+    <input type="submit" value="Submit">
+</form>
 </body>
 </html>
